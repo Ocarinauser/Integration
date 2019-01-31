@@ -1,4 +1,6 @@
+package ZeitlerIntegration;
 import java.util.Scanner;
+
 
 // Ben Zeitler 
 // Choose your own adventure 
@@ -16,8 +18,8 @@ public class Main {
 	}
 }
 
-
-	  
+// Variable is a location in memory
+// Scope means a variable is only  accessible in the method it was declared.
 	  
 	  
 
