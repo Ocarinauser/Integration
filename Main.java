@@ -25,6 +25,7 @@ public class Main {
 		
 		Object anObject = "I'm going to type this casting";
 		String aString = (String)anObject;
+		//Casting is taking an Object of one particular type and “turning it into” another Object type. 
 
 		
 		System.out.println("My roommate said \"Get more papertowels!\" to firstName.");
