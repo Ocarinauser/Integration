@@ -21,8 +21,8 @@ public class Main {
 		System.out.println("It will be a decision making game type of project.");
 
 		
-		
-		
+		System.out.println("My roommate said \"Get more papertowels!\" to firstName.");
+	
 	}
 }
 
