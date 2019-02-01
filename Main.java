@@ -8,6 +8,13 @@ import java.util.Scanner;
 public class Main {
 	
 	public static void main (String[] args) {
+	
+	boolean whenAcurrate = true;	
+        int howFast = 0;
+	double doubleDecimal = 2.0;
+        String firstName = "Ben";
+	
+	
 		
 		System.out.println("This is my integration project.");
 		System.out.println("It will be a decision making game type of project.");
