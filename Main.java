@@ -12,7 +12,7 @@ public class Main {
 	boolean whenAcurrate = true;	
         int howFast = 0;
 	double doubleDecimal = 2.0;
-        String firstName = "Ben";
+        string firstName = "Ben";
 	
 	
 		
