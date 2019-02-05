@@ -6,6 +6,10 @@ import java.util.Scanner;
 // Choose your own adventure 
 
 public class Main {
+//this is a header
+// public is an access modifier
+// void is the return type, means method shouldnt return 
+// method names
 	
 	public static void main (String[] args) {
 	
@@ -29,13 +33,23 @@ public class Main {
 
 		
 		System.out.println("My roommate said \"Get more papertowels!\" to firstName.");
-	
+		
+		double num1 = 5;
+		double num2 = 10;
+		//this is a call, in the parentheses is an argument
+		doubble squared = squareIt(num1, num2, "Hello");
+
 	}
+
+	public static double squareIt(double n1) {
+	return n1 * n1;
+	
+	
 }
 
+}
 // Variable is a location in memory
 // Scope means a variable is only  accessible in the method it was declared.
-	  
-	  
+
 
      
