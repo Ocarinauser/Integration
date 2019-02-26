@@ -44,19 +44,39 @@ public class Main {
       
       // Rolling a dice six times to get six random numbers, got source from repel it
       //assignment "Random"
+      
+      int num = 0;
+      int numberOfTimesRandomNumberPickedAndPrinted = 0;
+      
       Random randomGen = new Random();
+      
+      while (numberOfTimesRandomNumberPickedAndPrinted < 5) {
+        System.out.println(randomGen.nextInt(53));
+        numberOfTimesRandomNumberPickedAndPrinted++;
+      }
+      
+      for (int numberOfTimes = 0; numberOfTimes < 5; numberOfTimes++) {
+        System.out.println(randomGen.nextInt(53));
+        numberOfTimesRandomNumberPickedAndPrinted++;
+      }
+      
+      
       int number; 
       for (int counter=1; counter<=6;counter++){
         number = 1+randomGen.nextInt(6);
             System.out.println(1+randomGen.nextInt(6));
       
       }
+      // Has to be something inside the loop that has to be a condition
+   
       
    
 
-
          
-  
+          
+        
+      
+      
     boolean whenAcurrate = true;    
         int howFast = 25;
     double doubleSpeed = 2.0;
