@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 // Ben Zeitler 
-// Choose your own adventure 
+// Theme is Choose your own adventure 
 // Java Built-in datatypes
 // Byte: is an 8-bit signed two's complement integer. Minimum value of -128 to a maximum value of 127. Can be useful for saving memory in large arrays. Used in place of int where their limits help clarify your code. 
 //Short: a 16-bit signed two's complement integer. It has a minimum of -32,768 and a maximum of 32,767. Same as byte, use short to save memory in large arrays.
@@ -18,9 +18,23 @@ public class Main {
 // public is an access modifier
 // void is the return type, means method shouldn't return 
 // method names
+  
+// Operator precedence evaluates and resolves several operators in an order.
+  
+ 
+  public static double calculateTwoTimes(double side1, double side2) {
+    double total;
+    total = side1 * side2;
+return total; 
+  }
+  // a method with arguments and return values above
+  // got the source from repel.it       url:https://repl.it/student/submissions/5391932
     
     public static void main (String[] args) {
       
+      System.out.println("This is my integration project.");
+      System.out.println("It will be a decision making game type of project.");
+      // below is if else statements, credit goes to Prof. Vanselow
       int grade = 90;
       
       char finalLetter = (grade >= 90) ? 'A' : 'B';
@@ -42,7 +56,8 @@ public class Main {
         finalLetter = 'F';
       }
       
-      // Rolling a dice six times to get six random numbers, got source from repel it
+      // Rolling a dice six times to get six random numbers, 
+      // got source from repel it      url: https://repl.it/student/submissions/5495098
       //assignment "Random"
       
       int num = 0;
@@ -77,12 +92,17 @@ public class Main {
         
       
       
-    boolean whenAcurrate = true;    
-        int howFast = 25;
+    boolean whenAcurrate = true; 
+    boolean notAcurrate = false;
+        int howFast = 40;
     double doubleSpeed = 2.0;
-        String firstName = "Ben";
-    
+        String firstName = "Sonic";
         
+        
+    
+    
+        System.out.println( firstName + " is going really fast. How fast would he be going if he went twice as fast in mph?" );
+        System.out.println(calculateTwoTimes(howFast, doubleSpeed));
     
         
         System.out.println("This is my integration project.");
