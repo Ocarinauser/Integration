@@ -68,7 +68,7 @@ return total;
       // create if/else statements
       // create ternary constructs
       // use relational operators : >= sign
-      // below is if else statements, credit goes to Prof. Vanselow
+      // below is if/else constucts and ternary constructs, credit goes to Prof. Vanselow for demonstrating in class.
       int grade = 90;
       
       char finalLetter = (grade >= 90) ? 'A' : 'B';
@@ -180,12 +180,11 @@ return total;
     counter1++;
       } while (counter1 <=17);
 
-      
-      // Used % and /
+     
       
       
     
-        // Used %
+        // Used % sign
         // Credit to thenewboston.
         // url:  https://www.youtube.com/watch?v=8ZaTSedtf9M&feature=youtu.be
       Int women, men, people;
