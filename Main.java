@@ -14,10 +14,9 @@ import java.util.Random;
 //Char: single 16-bit Unicode character. It has a minimum value of '\u0000' (or 0) and a maximum value of '\uffff'
 
 public class Main {
-//this is a header
+//this is a header, top line of a method, Identified a header
 // public is an access modifier
-// void is the return type, means method shouldn't return 
-// method names
+// void is the return type, means method shouldn't return method names
   
 // Operator precedence evaluates and resolves several operators in an order.
   
@@ -27,6 +26,8 @@ public class Main {
     total = side1 * side2;
 return total; 
   }
+  // paramters, variables passed, identified: side1 and side2, needs to be multiplied.
+  //used *
   // a method with arguments and return values above
   // got the source from repel.it       url:https://repl.it/student/submissions/5391932
     
@@ -34,11 +35,16 @@ return total;
       
       System.out.println("This is my integration project.");
       System.out.println("It will be a decision making game type of project.");
+      
+      
+      // create if/else statements
+      // create ternary constructs
+      // use relational operators : >=
       // below is if else statements, credit goes to Prof. Vanselow
       int grade = 90;
       
       char finalLetter = (grade >= 90) ? 'A' : 'B';
-      // ? is ternary operator
+      //  ? is ternary operator
       // variable x = (expression) ? value if true: value if false
       if (grade >=90) {
         finalLetter = 'A';
@@ -56,10 +62,23 @@ return total;
         finalLetter = 'F';
       }
       
-      // Rolling a dice six times to get six random numbers, 
-      // got source from repel it      url: https://repl.it/student/submissions/5495098
-      //assignment "Random"
+      // Use conditional Operators &&, ||
+      // Got the idea/source from the course web site.     url:  https://sites.google.com/view/prof-v/lms/cop-2006/6-conditions-and-operators 
+      // used ==  
+        int years = 5;
+        int days = 1825;
+        if((years == 5) && (days == 1825))
+            System.out.println("years is 5 AND that's 1825 days");
+        if((years == 5) || (days == 365))
+            System.out.println("years is 5 or the number of days is 1825");
+
       
+      
+      // Rolling a dice six times to get six random numbers, 
+      // got source from repel it   url:  https://repl.it/student/submissions/5495098
+      //assignment "Random"
+      // used random class
+      // used ++
       int num = 0;
       int numberOfTimesRandomNumberPickedAndPrinted = 0;
       
@@ -82,6 +101,10 @@ return total;
             System.out.println(1+randomGen.nextInt(6));
       
       }
+      
+      
+      
+      
       // Has to be something inside the loop that has to be a condition
    
       
