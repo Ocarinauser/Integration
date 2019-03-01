@@ -15,7 +15,11 @@ import java.util.Random;
 
 public class Main {
 //this is a header, top line of a method, Identified a header
+  
+// method call is using an object we can call a method from another class, identified method call
+
 // public is an access modifier
+ 
 // void is the return type, means method shouldn't return method names
   
 // Operator precedence evaluates and resolves several operators in an order.
@@ -28,13 +32,21 @@ return total;
   }
   // paramters, variables passed, identified: side1 and side2, needs to be multiplied.
   //used *
+  
+  // Arguments are the actual values that are passed in when method is invoked. Argument Identified
+  
   // a method with arguments and return values above
+  
   // got the source from repel.it       url:https://repl.it/student/submissions/5391932
     
     public static void main (String[] args) {
       
       System.out.println("This is my integration project.");
       System.out.println("It will be a decision making game type of project.");
+      
+      // Used a Math class
+      // The Output would be 343.
+      system.out.println(Math.pow(7,3));
       
       
       // create if/else statements
@@ -76,9 +88,11 @@ return total;
       
       // Rolling a dice six times to get six random numbers, 
       // got source from repel it   url:  https://repl.it/student/submissions/5495098
-      //assignment "Random"
+      // assignment "Random"
       // used random class
       // used ++
+      // Used While loops
+      // Used for loops
       int num = 0;
       int numberOfTimesRandomNumberPickedAndPrinted = 0;
       
@@ -102,14 +116,32 @@ return total;
       
       }
       
+      // Used do while loops
+      // Credit to thenewboston.    url: https://www.youtube.com/watch?v=nfr52iR0Pyg&feature=youtu.be
+      Int counter1 = 0;
+
+       Do{ 
+    System.out.println(counter1);
+    counter1++;
+      } while (counter1 <=17);
+
       
-      
+      // Used % and /
+      For(int i=0; I < 5; i++ ) {
+    System.out.printf("The value of \n of i is:  %d/n " , i);
       
       // Has to be something inside the loop that has to be a condition
    
-      
-   
-
+     // Used +
+       System.out.println("15" + 2)
+         // Output will be 152
+         
+  // Used +=        
+   double number6 = 6;
+number6 += 7;
+System.out.println(number6);
+ // Output will be 13
+       
          
           
         
@@ -121,7 +153,9 @@ return total;
     double doubleSpeed = 2.0;
         String firstName = "Sonic";
         
+        System.out.println(whenAcurrate);
         
+        System.out.println(notAcurrate);
     
     
         System.out.println( firstName + " is going really fast. How fast would he be going if he went twice as fast in mph?" );
