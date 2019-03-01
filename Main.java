@@ -24,20 +24,22 @@ public class Main {
   
 // Operator precedence evaluates and resolves several operators in an order.
   
- 
+ // Created a method with arguments and return values
+   // got the source from repel.it   
+  //  url:   https://repl.it/student/submissions/5391932
+  
+  // paramters, variables passed, identified: side1 and side2, needs to be multiplied.
+  //used * sign
+  
+  // Arguments are the actual values that are passed in when method is invoked. Argument Identified
+  
   public static double calculateTwoTimes(double side1, double side2) {
     double total;
     total = side1 * side2;
 return total; 
   }
-  // paramters, variables passed, identified: side1 and side2, needs to be multiplied.
-  //used *
   
-  // Arguments are the actual values that are passed in when method is invoked. Argument Identified
-  
-  // a method with arguments and return values above
-  
-  // got the source from repel.it       url:https://repl.it/student/submissions/5391932
+ 
     
     public static void main (String[] args) {
       
@@ -49,9 +51,23 @@ return total;
       system.out.println(Math.pow(7,3));
       
       
+      // Compare two springs with == sign.
+      //The == works with objects because it is used to compare two operands. Whether they are equal or not.
+        String s1 = "String1"; 
+        String s2 = "String2"; 
+       if (s1 == s2){ 
+  
+        System.out.println(" String1 and string1 are the same");
+       }
+      // compareTo with two objects 
+      System.out.println(s1.compareTo(s2));
+        
+        
+      
+      
       // create if/else statements
       // create ternary constructs
-      // use relational operators : >=
+      // use relational operators : >= sign
       // below is if else statements, credit goes to Prof. Vanselow
       int grade = 90;
       
@@ -76,13 +92,52 @@ return total;
       
       // Use conditional Operators &&, ||
       // Got the idea/source from the course web site.     url:  https://sites.google.com/view/prof-v/lms/cop-2006/6-conditions-and-operators 
-      // used ==  
+      // used == sign  
         int years = 5;
         int days = 1825;
         if((years == 5) && (days == 1825))
             System.out.println("years is 5 AND that's 1825 days");
         if((years == 5) || (days == 365))
             System.out.println("years is 5 or the number of days is 1825");
+      
+      
+      
+      // Used Switch
+      // Used Break in a loop
+      // Break is used when the loop is ended and then it resumes the next statement following the loop
+      // Credit to John from Caveofprogramming.com. Udemy; switch  section 2 lecture 13 
+      // url:   https://www.udemy.com/java-tutorial/learn/v4/t/lecture/135315
+      System.out.println("please enter a command:  ");
+      String text = input.nextLine();
+
+      Switch(text) {
+      Case "start" :
+      System.out.println("Machine started!");
+      Break;
+
+      Case "stop":
+      system.out.println("Machine stopped. " );
+      Break;
+
+      Default:
+    System.out.println("Command not recognized");
+        
+        // Used continue in a loop
+        // continue means that it'll skip to the next iteration of the loop.
+        // idea/source came from url:  https://www.tutorialspoint.com/java/java_continue_statement.htm
+    char [] bigLetters = {A, B, C, D, E};
+        
+        for (char y : bigLetters ) {
+          if ( y == D ) {
+            continue;
+          }
+          System.out.print( y );
+          System.out.print("\n");
+        }
+
+      int thisNumber = 2;
+        System.out.println(--thisNumber);
+        // Output will be 1
 
       
       
@@ -90,7 +145,7 @@ return total;
       // got source from repel it   url:  https://repl.it/student/submissions/5495098
       // assignment "Random"
       // used random class
-      // used ++
+      // used ++ sign
       // Used While loops
       // Used for loops
       int num = 0;
@@ -127,9 +182,31 @@ return total;
 
       
       // Used % and /
-      For(int i=0; I < 5; i++ ) {
-    System.out.printf("The value of \n of i is:  %d/n " , i);
       
+      
+    
+        // Used %
+        // Credit to thenewboston.
+        // url:  https://www.youtube.com/watch?v=8ZaTSedtf9M&feature=youtu.be
+      Int women, men, people;
+      women = 11;
+      men = 3
+      People = women % men;
+      System.out.println(people);
+        //Output will be 2
+        
+        // Used - sign
+     if( People = women - men);{
+      System.out.println(people);
+     }
+      //Output will be 8
+        
+       // used / sign
+     if (People = women / men);{
+      System.out.println(people);
+     }  
+    //output will be 3.666
+        
       // Has to be something inside the loop that has to be a condition
    
      // Used +
