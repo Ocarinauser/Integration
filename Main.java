@@ -98,6 +98,7 @@ return total;
       // Use conditional Operators &&, ||
       // Got the idea/source from the course web site.     url:  https://sites.google.com/view/prof-v/lms/cop-2006/6-conditions-and-operators 
       // used == sign  
+      // The == is the means we compare the right and left side.
         int years = 5;
         int days = 1825;
         if((years == 5) && (days == 1825))
@@ -116,13 +117,13 @@ return total;
       String text = input.nextLine();
 
       Switch(text) {
-      Case "start" :
+      case "start" :
       System.out.println("Machine started!");
-      Break;
+      break;
 
-      Case "stop":
+      case "stop":
       system.out.println("Machine stopped. " );
-      Break;
+      break;
 
       Default:
     System.out.println("Command not recognized");
