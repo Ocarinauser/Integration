@@ -173,9 +173,9 @@ return total;
       
       // Used do while loops
       // Credit to thenewboston.    url: https://www.youtube.com/watch?v=nfr52iR0Pyg&feature=youtu.be
-      Int counter1 = 0;
+      int counter1 = 0;
 
-       Do{ 
+       do{ 
     System.out.println(counter1);
     counter1++;
       } while (counter1 <=17);
@@ -187,7 +187,7 @@ return total;
         // Used % sign
         // Credit to thenewboston.
         // url:  https://www.youtube.com/watch?v=8ZaTSedtf9M&feature=youtu.be
-      Int women, men, people;
+      int women, men, people;
       women = 11;
       men = 3
       People = women % men;
@@ -195,13 +195,13 @@ return total;
         //Output will be 2
         
         // Used - sign
-     if( People = women - men);{
+     if( People = women - men){
       System.out.println(people);
      }
       //Output will be 8
         
        // used / sign
-     if (People = women / men);{
+     if (People = women / men){
       System.out.println(people);
      }  
     //output will be 3.666
@@ -209,7 +209,7 @@ return total;
       // Has to be something inside the loop that has to be a condition
    
      // Used +
-       System.out.println("15" + 2)
+       System.out.println("15" + 2);
          // Output will be 152
          
   // Used +=        
