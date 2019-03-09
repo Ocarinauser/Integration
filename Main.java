@@ -13,6 +13,11 @@ import java.util.Random;
 //Boolean: has only two possible values: true and false. Use this data type for simple true/false conditions. This data type represents one bit of information, but its "size" isn't something that's precisely defined.
 //Char: single 16-bit Unicode character. It has a minimum value of '\u0000' (or 0) and a maximum value of '\uffff'
 
+
+// Variable is a location in memory
+// Scope means a variable is only  accessible in the method it was declared.
+
+
 public class Main {
 //this is a header, top line of a method, Identified a header
   
@@ -253,7 +258,6 @@ System.out.println(number6);
         
         }
     }
-// Variable is a location in memory
-// Scope means a variable is only  accessible in the method it was declared.
+
 
      
