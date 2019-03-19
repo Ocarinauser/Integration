@@ -30,6 +30,8 @@ import java.util.Scanner;
 // Variable is a location in memory
 // Scope means a variable is only accessible in the method it was declared.
 
+// A constructor is a method that doesn't have a return type, name is always same as class name.
+
 public class Main {
   // this is a header, top line of a method, Identified a header
 
@@ -56,187 +58,191 @@ public class Main {
     return total;
   }
 
-  public static void main (String[] args) {
-      
-      System.out.println("This is my integration project.");
-      System.out.println("It will be a decision making game type of project.");
-      
-      // Used a Math class
-      // The Output would be 343.
-      System.out.println(Math.pow(7,3));
-      
-      // Compare two springs with == sign.
-      //The == works with objects because it is used to compare two operands. Whether they are equal or not.
-        String s1 = "String1"; 
-        String s2 = "String2"; 
-       if (s1 == s2){ 
-  
-        System.out.println(" String1 and string1 are the same");
-       }
-      // compareTo with two objects 
-      System.out.println(s1.compareTo(s2));
-        
-      // create if/else statements
-      // create ternary constructs
-      // use relational operators : >= sign
-      // below is if/else constucts and ternary constructs, credit goes to Prof. Vanselow for demonstrating in class.
-      int grade = 90;
-      
-      char finalLetter = (grade >= 90) ? 'A' : 'B';
-      //  ? is ternary operator
-      // variable x = (expression) ? value if true: value if false
-      if (grade >=90) {
-        finalLetter = 'A';
-      }
-      else if (grade >= 80){
-        finalLetter = 'B';
-      }
-      else if (grade >= 70){
-        finalLetter = 'C';
-      }
-      else if (grade >= 60){
-        finalLetter = 'D';
-      }
-      else {
-        finalLetter = 'F';
-      }
-      
-      // Use conditional Operators &&, ||
-      // Got the idea/source from the course web site.     url:  https://sites.google.com/view/prof-v/lms/cop-2006/6-conditions-and-operators 
-      // used == sign  
-      // The == is the means we compare the right and left side to see if it is equal.
-        int years = 5;
-        int days = 1825;
-        if((years == 5) && (days == 1825))
-            System.out.println("years is 5 AND that's 1825 days");
-        if((years == 5) || (days == 365))
-            System.out.println("years is 5 or the number of days is 1825");
-     
-      // Used Switch
-      // Used Break in a loop
-      // Break is used when the loop is ended and then it resumes the next statement following the loop
-      // Credit to John from Caveofprogramming.com. Udemy; switch  section 2 lecture 13 
-      // url:   https://www.udemy.com/java-tutorial/learn/v4/t/lecture/135315
-        
-      Scanner input = new Scanner(System.in);
-      System.out.println("please enter a command:  ");
-      String text = input.nextLine();
+  public static void main(String[] args) {
 
-      switch (text) { 
-      case "start" :
-      System.out.println("Machine started!");
-      break;
+    System.out.println("This is my integration project.");
+    System.out.println("It will be a decision making game type of project.");
+
+    // Used a Math class
+    // The Output would be 343.
+    System.out.println(Math.pow(7, 3));
+
+    // Compare two springs with == sign.
+    // The == works with objects because it is used to compare two operands. Whether they are equal
+    // or not.
+    String s1 = "String1";
+    String s2 = "String2";
+    if (s1 == s2) {
+
+      System.out.println(" String1 and string1 are the same");
+    }
+    // compareTo with two objects
+    System.out.println(s1.compareTo(s2));
+
+
+    // create if/else statements
+    // create ternary constructs
+    // use relational operators : >= sign
+    // below is if/else constucts and ternary constructs, credit goes to Prof. Vanselow for
+    // demonstrating in class.
+    int grade = 90;
+
+    char finalLetter = (grade >= 90) ? 'A' : 'B';
+    // ? is ternary operator
+    // variable x = (expression) ? value if true: value if false
+    if (grade >= 90) {
+      finalLetter = 'A';
+    } else if (grade >= 80) {
+      finalLetter = 'B';
+    } else if (grade >= 70) {
+      finalLetter = 'C';
+    } else if (grade >= 60) {
+      finalLetter = 'D';
+    } else {
+      finalLetter = 'F';
+    }
+
+    // Use conditional Operators &&, ||
+    // Got the idea/source from the course web site. url:
+    // https://sites.google.com/view/prof-v/lms/cop-2006/6-conditions-and-operators
+    // used == sign
+    // The == is the means we compare the right and left side to see if it is equal.
+    int years = 5;
+    int days = 1825;
+    if ((years == 5) && (days == 1825))
+      System.out.println("years is 5 AND that's 1825 days");
+    if ((years == 5) || (days == 365))
+      System.out.println("years is 5 or the number of days is 1825");
+
+    // Used switch
+    // Used break in a loop
+    // break is used when the loop is ended and then it resumes the next statement following the
+    // loop
+    // Credit to John from Caveofprogramming.com. Udemy; switch section 2 lecture 13
+    // url: https://www.udemy.com/java-tutorial/learn/v4/t/lecture/135315
+
+    Scanner input = new Scanner(System.in);
+    System.out.println("please enter a command:  ");
+    String text = input.nextLine();
+
+    switch (text) {
+      case "start":
+        System.out.println("Machine started!");
+        break;
 
       case "stop":
-      System.out.println("Machine stopped. " );
-      break;
+        System.out.println("Machine stopped. ");
+        break;
 
       default:
-    System.out.println("Command not recognized");
+        System.out.println("Command not recognized");
     }
-        // Used continue in a loop
-        // continue means that it'll skip to the next iteration of the loop.
-        // idea/source came from url:  https://www.tutorialspoint.com/java/java_continue_statement.htm
+    // Used continue in a loop
+    // continue means that it'll skip to the next iteration of the loop.
+    // idea/source came from url: https://www.tutorialspoint.com/java/java_continue_statement.htm
     int[] numbers = {1, 2, 3, 4, 5};
-        
+
     for (int x : numbers) {
       if (x == 3) {
-            continue;
-          }
+        continue;
+      }
       System.out.print(x);
-          System.out.print("\n");
-        }
+      System.out.print("\n");
+    }
 
-      int thisNumber = 2;
-        System.out.println(--thisNumber);
-        // Output will be 1
+    int thisNumber = 2;
+    System.out.println(--thisNumber);
+    // Output will be 1
 
-      // Rolling a dice six times to get six random numbers, 
-      // got source from repel it   url:  https://repl.it/student/submissions/5495098
-      // assignment "Random"
-      // used random class
-      // used ++ sign
-      // Used While loops
-      // Used for loops
-      int num = 0;
-      int numberOfTimesRandomNumberPickedAndPrinted = 0;
-      
-      Random randomGen = new Random();
-      
-      while (numberOfTimesRandomNumberPickedAndPrinted < 5) {
-        System.out.println(randomGen.nextInt(53));
-        numberOfTimesRandomNumberPickedAndPrinted++;
-      }
-      
-      for (int numberOfTimes = 0; numberOfTimes < 5; numberOfTimes++) {
-        System.out.println(randomGen.nextInt(53));
-        numberOfTimesRandomNumberPickedAndPrinted++;
-      }
-      
-      int number; 
-      for (int counter=1; counter<=6;counter++){
-        number = 1+randomGen.nextInt(6);
-            System.out.println(1+randomGen.nextInt(6));
-      
-      }
-      
-      // Used do while loops
-      // Credit to thenewboston.    url: https://www.youtube.com/watch?v=nfr52iR0Pyg&feature=youtu.be
-      int counter1 = 0;
+    // Rolling a dice six times to get six random numbers,
+    // got source from repel it url: https://repl.it/student/submissions/5495098
+    // assignment "Random"
+    // used random class
+    // used ++ sign
+    // Used While loops
+    // Used for loops
+    int num = 0;
+    int numberOfTimesRandomNumberPickedAndPrinted = 0;
 
-       do{ 
-    System.out.println(counter1);
-    counter1++;
-      } while (counter1 <=17);
+    Random randomGen = new Random();
 
-        // Used % sign
-        // Credit to thenewboston.
-        // url:  https://www.youtube.com/watch?v=8ZaTSedtf9M&feature=youtu.be
+    while (numberOfTimesRandomNumberPickedAndPrinted < 5) {
+      System.out.println(randomGen.nextInt(53));
+      numberOfTimesRandomNumberPickedAndPrinted++;
+    }
+
+    for (int numberOfTimes = 0; numberOfTimes < 5; numberOfTimes++) {
+      System.out.println(randomGen.nextInt(53));
+      numberOfTimesRandomNumberPickedAndPrinted++;
+    }
+
+    int number;
+    for (int counter = 1; counter <= 6; counter++) {
+      number = 1 + randomGen.nextInt(6);
+      System.out.println(1 + randomGen.nextInt(6));
+
+    }
+
+    // Used do while loops
+    // Credit to thenewboston
+    // url: https://www.youtube.com/watch?v=nfr52iR0Pyg&feature=youtu.be
+    int counter1 = 0;
+
+    do {
+      System.out.println(counter1);
+      counter1++;
+    } while (counter1 <= 17);
+
+    // Used % sign
+    // Credit to thenewboston.
+    // url: https://www.youtube.com/watch?v=8ZaTSedtf9M&feature=youtu.be
 
     int women, men, people;
-      women = 11;
-      men = 3;
+    women = 11;
+    men = 3;
     people = women % men;
-      System.out.println(people);
-        //Output will be 2
-        
+    System.out.println(people);
+    // Output will be 2
 
-      // Has to be something inside the loop that has to be a condition
-   
-     // Used +
-       System.out.println("15" + 2);
-         // Output will be 152
-         
-  // Used +=        
-   double number6 = 6;
-number6 += 7;
-System.out.println(number6);
- // Output will be 13
-         
-    boolean whenAcurrate = true; 
+    // Has to be something inside the loop that has to be a condition
+
+    // Used +
+    System.out.println("15" + 2);
+    // Output will be 152
+
+    // Used +=
+    double number6 = 6;
+    number6 += 7;
+    System.out.println(number6);
+    // Output will be 13
+
+    boolean whenAcurrate = true;
     boolean notAcurrate = false;
-        int howFast = 40;
+    int howFast = 40;
     double doubleSpeed = 2.0;
-        String firstName = "Sonic";
-        
-        System.out.println(whenAcurrate);
-        
-        System.out.println(notAcurrate);
-    
-        System.out.println( firstName + " is going really fast. How fast would he be going if he went twice as fast in mph?" );
-        System.out.println(calculateTwoTimes(howFast, doubleSpeed));
+    String firstName = "Sonic";
 
-        System.out.println("This is my integration project.");
-        System.out.println("It will be a decision making game type of project.");
-        
-        final double valuePi = Math.PI;
-        //When a variable is declared with final keyword, its value can’t be modified, so for Pi it's always 3.14
-        
-        Object anObject = "I'm going to type this casting";
-        String aString = (String)anObject;
-        //Casting is taking an Object of one particular type and “turning it into” another Object type. 
+    System.out.println(whenAcurrate);
 
-        System.out.println("My roommate said  \"Get more papertowels!\" " + "to " + firstName);
-        
-        }
-    }
+    System.out.println(notAcurrate);
+
+    System.out.println(firstName
+        + " is going really fast. How fast would he be going if he went twice as fast in mph?");
+    System.out.println(calculateTwoTimes(howFast, doubleSpeed));
+
+    System.out.println("This is my integration project.");
+    System.out.println("It will be a decision making game type of project.");
+
+    final double valuePi = Math.PI;
+    // When a variable is declared with final keyword, its value can’t be modified, so for Pi it's
+    // always 3.14
+
+    Object anObject = "I'm going to type this casting";
+    String aString = (String) anObject;
+    // Casting is taking an Object of one particular type and “turning it into” another Object type.
+
+    System.out.println("My roommate said  \"Get more papertowels!\" " + "to " + firstName);
+
+  }
+
+}
