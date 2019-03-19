@@ -74,7 +74,9 @@ public class Main {
     String s2 = "String2";
     if (s1 == s2) {
 
-      System.out.println(" String1 and string1 are the same");
+      System.out.println("String 1 is equal to string 2");
+    } else if (s1.equals(s2)) {
+      System.out.println("String 1 are still equal to string 2");
     }
     // compareTo with two objects
     System.out.println(s1.compareTo(s2));
@@ -197,11 +199,11 @@ public class Main {
     // Credit to thenewboston.
     // url: https://www.youtube.com/watch?v=8ZaTSedtf9M&feature=youtu.be
 
-    int women, men, people;
+    int women, men, people1;
     women = 11;
     men = 3;
-    people = women % men;
-    System.out.println(people);
+    people1 = women % men;
+    System.out.println(people1);
     // Output will be 2
 
     // Has to be something inside the loop that has to be a condition
