@@ -245,6 +245,21 @@ public class Main {
 
     System.out.println("My roommate said  \"Get more papertowels!\" " + "to " + firstName);
 
+     // Static means belonging to a class not an object
+    int[] anArray = new int[3];
+
+    try {
+      System.out.println("Enter first number");
+      int num1 = input.nextInt();
+      System.out.println("Enter second number");
+      int num2 = input.nextInt();
+      System.out.println("Result = " + num1 / num2);
+
+    } catch (Exception ex) {
+      System.out.println("You can't do that");
+    }
+
+  
   }
 
 }
