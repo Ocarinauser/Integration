@@ -247,7 +247,8 @@ public class Main {
 
      // Static means belonging to a class not an object
     int[] anArray = new int[3];
-
+    
+// Effectively utilize exception handling for user input of an int
     try {
       System.out.println("Enter first number");
       int num1 = input.nextInt();
