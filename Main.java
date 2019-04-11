@@ -52,6 +52,26 @@ public class Main {
 
   // Arguments are the actual values that are passed in when method is invoked. Argument Identified
 
+  private class Movie {
+
+  }
+
+  // PSI 3 requirement 2
+  // Overload a method
+  private int year;
+  private String model;
+  private String color;
+
+  public Main(String model, int year) {
+    this.model = model;
+    this.year = year;
+  }
+
+  public Main(String model, String color) {
+    this.model = model;
+    this.color = color;
+  }
+
   public static double calculateTwoTimes(double side1, double side2) {
     double total;
     total = side1 * side2;
@@ -61,15 +81,14 @@ public class Main {
   public static void main(String[] args) {
 
     System.out.println("This is my integration project.");
-    System.out.println("It will be a decision making game type of project.");
+    System.out.println("I have no theme to make out of this.");
 
     // Used a Math class
     // The Output would be 343.
     System.out.println(Math.pow(7, 3));
 
     // Compare two springs with == sign.
-    // The == works with objects because it is used to compare two operands. Whether they are equal
-    // or not.
+    // The == checks if both objects point to the same memory location.
     String s1 = "String1";
     String s2 = "String2";
     if (s1 == s2) {
@@ -108,7 +127,8 @@ public class Main {
     // Got the idea/source from the course web site. url:
     // https://sites.google.com/view/prof-v/lms/cop-2006/6-conditions-and-operators
     // used == sign
-    // The == is the means we compare the right and left side to see if it is equal.
+    // The == works with objects because it is used to compare two operands. Whether they are equal
+    // or not.
     int years = 5;
     int days = 1825;
     if ((years == 5) && (days == 1825))
@@ -244,11 +264,22 @@ public class Main {
     // Casting is taking an Object of one particular type and “turning it into” another Object type.
 
     System.out.println("My roommate said  \"Get more papertowels!\" " + "to " + firstName);
+    // Static means belonging to a class not an object
 
-     // Static means belonging to a class not an object
-    int[] anArray = new int[3];
-    
-// Effectively utilize exception handling for user input of an int
+    // PSI 3 starts here
+
+    // Inheritance is the process where a class acquires properties (methods and fields) of another.
+    // You can reuse the fields and methods of the existing class without having to write and debug
+    // them yourself.
+
+    // declare, create, and initialize an array of integers
+    // one-dimensional array
+    int[] anArray = {1, 2, 3};
+    for (int i = 0; i < anArray.length; i++) {
+      System.out.println(anArray[i]);
+    }
+
+    // Effectively utilize exception handling for user input of an int
     try {
       System.out.println("Enter first number");
       int num1 = input.nextInt();
@@ -260,7 +291,108 @@ public class Main {
       System.out.println("You can't do that");
     }
 
-  
+  }
+
+  // Make a class in separate file with private fields, public getters and setters, a constructor
+  // with
+  // and without parameters.
+  // Ben
+  // Car class
+  public class Car {
+    public void print() {
+      System.out.println(make);
+    }
+
+    private String model;
+    private String make;
+    private int year;
+
+    public String getInfo() {
+      return "Make is " + make + "\nModel is " + model;
+    }
+
+    public void setModel(String m) {
+      model = m;
+    }
+
+    public String getModel() {
+      return model;
+    }
+
+    public void setMake(String ma) {
+      make = ma;
+    }
+
+    public String getMake() {
+      return make;
+    }
+
+    public void setYear(int y) {
+      year = y;
+    }
+
+    public int getYear() {
+      return year;
+    }
+
+
+
+    // constructor with parameters
+    public Car(String m) { // header for constructor
+      // called automatically when objects created
+      this.model = m;
+      make = "Unknown";
+    }
+
+    // Constructor without parameters
+    public Car() {
+      year = 1998;
+    }
+
+  }
+
+  // Develop code that makes use of polymorphism
+  public class Male extends Person {
+    // Use super
+    public Male(int a) {
+      super(a);
+      // TODO Auto-generated constructor stub
+    }
+
+    public void setAge(int a) {
+
+      age = a;
+
+      System.out.println("I am in Male");
+    }
+
+    public void printInfo() {
+      System.out.println("I'm a man");
+
+    }
+
+  }
+
+  public class Person {
+
+    public Person(int a) {
+      System.out.println("In Person Constructor");
+      age = a;
+    }
+
+    protected int age;
+    // private int age;
+
+    public int getAge() {
+      return age;
+    }
+
+    public void setAge(int age) {
+      this.age = age;
+      System.out.println("I am in Person");
+    }
+
   }
 
 }
+
