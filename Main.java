@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 // Ben Zeitler
 // Theme is Choose your own adventure
@@ -266,7 +267,7 @@ public class Main {
     System.out.println("My roommate said  \"Get more papertowels!\" " + "to " + firstName);
     // Static means belonging to a class not an object
 
-    // PSI 3 starts here
+   // PSI 3 starts here
 
     // Inheritance is the process where a class acquires properties (methods and fields) of another.
     // You can reuse the fields and methods of the existing class without having to write and debug
@@ -274,9 +275,67 @@ public class Main {
 
     // declare, create, and initialize an array of integers
     // one-dimensional array
-    int[] anArray = {1, 2, 3};
+    int[] anArray = {1, 2, 3, 4, 5};
     for (int i = 0; i < anArray.length; i++) {
       System.out.println(anArray[i]);
+      //manually find the smallest value in an array
+      System.out.println(anArray[0]);
+    }
+    
+    // Get a sum of values in an array using accumulator
+    int someArray[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int sum = 0;
+
+    for (int t : someArray)
+        sum += t;
+    int[] ta = new int[101];
+    for (int t = 0; t < ta.length; t++) ta[t] = t;
+       for (int e : ta) sum += e;
+    System.out.println(sum);
+    
+    // Declare and use an ArrayList
+    ArrayList<Integer>theNumbers= new ArrayList<Integer>();
+    
+    theNumbers.add(10);
+    theNumbers.add(20);
+    theNumbers.add(30);
+    
+    System.out.println(theNumbers.get(0));
+    
+    // use multi-dimensional arrays
+    
+    int[] values = {4, 7, 17};
+    
+    System.out.println(values[2]);
+    
+    int[][] grid = {
+    		{4, 7, 17},
+    		{3, 6},
+    		{1, 2, 3, 4}
+    };
+    System.out.println(grid[1][1]);
+    System.out.println(grid[0][1]);
+    // Search an array and identify index
+    // It will print out 17 at number 7
+    // prints out 7 in grid 0
+    
+    
+    // Search a two-dim array
+    // create and use the enhanced for loop
+
+    int[][] points = new int[1][10];
+
+    int totalPoints = 0;
+    for (int team = 0; team < points.length; team++) {
+      for (int inning = 0; inning < points[team].length; inning++) {
+        points[team][inning] = 2;
+      }
+    }
+    for (int team = 0; team < points.length; team++) {
+      for (int inning = 0; inning < points[team].length; inning++) {
+        totalPoints += points[team][inning];
+        System.out.println("The total number of points is " + totalPoints);
+      }
     }
 
     // Effectively utilize exception handling for user input of an int
