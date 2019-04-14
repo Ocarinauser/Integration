@@ -53,26 +53,6 @@ public class Main {
 
   // Arguments are the actual values that are passed in when method is invoked. Argument Identified
 
-  private class Movie {
-
-  }
-
-  // PSI 3 requirement 2
-  // Overload a method
-  private int year;
-  private String model;
-  private String color;
-
-  public Main(String model, int year) {
-    this.model = model;
-    this.year = year;
-  }
-
-  public Main(String model, String color) {
-    this.model = model;
-    this.color = color;
-  }
-
   public static double calculateTwoTimes(double side1, double side2) {
     double total;
     total = side1 * side2;
@@ -357,15 +337,29 @@ public class Main {
   // and without parameters.
   // Ben
   // Car class
+
   public class Car {
     public void print() {
       System.out.println(make);
     }
-
+    
+  // PSI 3 requirement 2
+  // Overload a method
+ 
     private String model;
     private String make;
     private int year;
 
+    public Main(String model, int year) {
+    this.model = model;
+    this.year = year;
+  }
+
+  public Main(String model, String make) {
+    this.model = model;
+    this.make = make;
+  }
+   
     public String getInfo() {
       return "Make is " + make + "\nModel is " + model;
     }
