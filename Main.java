@@ -266,9 +266,9 @@ public class Main {
     int someArray[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int sum = 0;
 
+    int[] ta = new int[101];
     for (int t : someArray)
         sum += t;
-    int[] ta = new int[101];
     for (int t = 0; t < ta.length; t++) ta[t] = t;
        for (int e : ta) sum += e;
     System.out.println(sum);
@@ -281,6 +281,15 @@ public class Main {
     theNumbers.add(30);
     
     System.out.println(theNumbers.get(0));
+    
+    //Search an array
+    
+    List<Integer> array = Arrays.asList(1, 3, 5, 2, 4);
+        if (array.contains(4)) {
+            System.out.println("We found 4");
+        };
+
+        
     
     // use multi-dimensional arrays
     
