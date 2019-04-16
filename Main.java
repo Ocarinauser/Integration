@@ -61,6 +61,13 @@ public class Main {
     return total;
   }
 
+  // use - sign
+  public static double calculateoneTime(double side1, double side2) {
+    double subtraction;
+    subtraction = side1 - side2;
+    return subtraction;
+  }
+
   public static void main(String[] args) {
 
     System.out.println("This is my integration project.");
@@ -269,12 +276,15 @@ public class Main {
     int sum = 0;
 
     int[] ta = new int[101];
-    for (int t : someArray)
+    for (int t : someArray) {
       sum += t;
-    for (int t = 0; t < ta.length; t++)
+    }
+    for (int t = 0; t < ta.length; t++) {
       ta[t] = t;
-    for (int e : ta)
+    }
+    for (int e : ta) {
       sum += e;
+    }
     System.out.println(sum);
 
     // Declare and use an ArrayList
@@ -285,14 +295,13 @@ public class Main {
     theNumbers.add(30);
 
     System.out.println(theNumbers.get(0));
+    // It will return 10
 
     // Search an array
     List<Integer> array = Arrays.asList(1, 3, 5, 2, 4);
     if (array.contains(4)) {
       System.out.println("We found 4");
     } ;
-
-
 
     // use multi-dimensional arrays
 
@@ -306,7 +315,6 @@ public class Main {
     // Search an array and identify index
     // It will print out 17 at number 7
     // prints out 7 in grid 0
-
 
     // Search a two-dim array
     // create and use the enhanced for loop
@@ -337,7 +345,8 @@ public class Main {
     } catch (Exception ex) {
       System.out.println("You can't do that");
     }
-
+    System.out.println("bug".substring(0));
   }
 
 }
+
