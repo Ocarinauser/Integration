@@ -1,4 +1,4 @@
-  // Make a class in separate file with private fields, public getters and setters, a constructor with
+// Make a class in separate file with private fields, public getters and setters, a constructor with
 // and without parameters.
 // Ben
 // Car class
@@ -10,16 +10,17 @@ public class Car {
   private String model;
   private String make;
   private int year;
-  
-  //Overload a method
-  public Car(String model, String make){
+
+  // Overload a method
+  public Car(String model, String make) {
     this.model = model;
     this.make = make;
-    }
-    public Car (String model, int year){
-      this.model = model;
-      this.year = year;
-      }
+  }
+
+  public Car(String model, int year) {
+    this.model = model;
+    this.year = year;
+  }
 
   public String getInfo() {
     return "Make is " + make + "\nModel is " + model;
@@ -49,10 +50,14 @@ public class Car {
     return year;
   }
 
-  
 
 
   // constructor with parameters
+  /**
+   * Getting the constructor.
+   * 
+   * @param m uses m as a model. uses this as a constructor.
+   */
   public Car(String m) { // header for constructor
     // called automatically when objects created
     this.model = m;
@@ -65,3 +70,4 @@ public class Car {
   }
 
 }
+
