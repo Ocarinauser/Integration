@@ -84,7 +84,6 @@ public class Main {
     return subtraction;
   }
 
-
   /**
    * This is where the program starts.
    * 
@@ -111,7 +110,6 @@ public class Main {
     }
     // compareTo with two objects
     System.out.println(s1.compareTo(s2));
-
 
     // create if/else statements
     // create ternary constructs
@@ -164,7 +162,6 @@ public class Main {
     Scanner input = new Scanner(System.in);
     System.out.println("please enter a command: Type Start or Stop ");
     String text = input.nextLine();
-
 
     switch (text) {
       case "start":
@@ -336,7 +333,6 @@ public class Main {
       System.out.println("We found 4");
     }
 
-
     // use multi-dimensional arrays
 
     int[] values = {4, 7, 17};
@@ -349,7 +345,6 @@ public class Main {
     // Search an array and identify index
     // It will print out 17 at number 7
     // prints out 7 in grid 0
-
 
     // Search a two-dim array
     // create and use the enhanced for loop
@@ -381,7 +376,7 @@ public class Main {
       System.out.println("You can't do that");
     }
 
-   // Testing out if the bug works to make sure that we have no other bugs presents
+    // Testing out if the bug works to make sure that we have no other bugs presents
     System.out.println("bug".substring(0));
   }
 
