@@ -5,7 +5,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 // Ben Zeitler
-// Theme is Nothing really
+// Theme is me learning how to implement code correctly
+// This project is to demonstrate how to execute code correctly.
+
 // Java Built-in datatypes
 // Byte: is an 8-bit signed two's complement integer. Minimum value of -128 to a maximum value of
 // 127. Can be useful for saving memory in large arrays. Used in place of int where their limits
