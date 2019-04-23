@@ -58,7 +58,9 @@ public class Main {
   // Arguments are the actual values that are passed in when method is invoked. Argument Identified
 
   /**
-   * How to find the total by multiplying two sides.
+   * I am the author of this code.
+   * 
+   * @author bjzeitler2920 How to find the total by multiplying two sides.
    * 
    * @param side1 the side that will be multiplied.
    * @param side2 second side that will be multiplied.
