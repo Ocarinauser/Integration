@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 // Ben Zeitler
-// Theme is Choose your own adventure
+// Theme is Nothing really
 // Java Built-in datatypes
 // Byte: is an 8-bit signed two's complement integer. Minimum value of -128 to a maximum value of
 // 127. Can be useful for saving memory in large arrays. Used in place of int where their limits
@@ -55,6 +55,13 @@ public class Main {
 
   // Arguments are the actual values that are passed in when method is invoked. Argument Identified
 
+  /**
+   * How to find the total by multiplying two sides.
+   * 
+   * @param side1 the side that will be multiplied.
+   * @param side2 second side that will be multiplied.
+   * @return return the value.
+   */
   public static double calculateTwoTimes(double side1, double side2) {
     double total;
     total = side1 * side2;
@@ -62,12 +69,25 @@ public class Main {
   }
 
   // use - sign
+  /**
+   * How to find the subtraction value by subtracting two sides.
+   * 
+   * @param side1 Where the side is going to subtract.
+   * @param side2 The second side being subtracted.
+   * @return return the subtraction value.
+   */
   public static double calculateoneTime(double side1, double side2) {
     double subtraction;
     subtraction = side1 - side2;
     return subtraction;
   }
 
+
+  /**
+   * This is where the program starts.
+   * 
+   * @param args Where my class starts to work.
+   */
   public static void main(String[] args) {
 
     System.out.println("This is my integration project.");
@@ -103,14 +123,19 @@ public class Main {
     // variable x = (expression) ? value if true: value if false
     if (grade >= 90) {
       finalLetter = 'A';
+      System.out.println(finalLetter);
     } else if (grade >= 80) {
       finalLetter = 'B';
+      System.out.println(finalLetter);
     } else if (grade >= 70) {
       finalLetter = 'C';
+      System.out.println(finalLetter);
     } else if (grade >= 60) {
       finalLetter = 'D';
+      System.out.println(finalLetter);
     } else {
       finalLetter = 'F';
+      System.out.println(finalLetter);
     }
 
     // Use conditional Operators &&, ||
@@ -121,11 +146,12 @@ public class Main {
     // or not.
     int years = 5;
     int days = 1825;
-    if ((years == 5) && (days == 1825))
+    if ((years == 5) && (days == 1825)) {
       System.out.println("years is 5 AND that's 1825 days");
-    if ((years == 5) || (days == 365))
+    }
+    if ((years == 5) || (days == 365)) {
       System.out.println("years is 5 or the number of days is 1825");
-
+    }
     // Used switch
     // Used break in a loop
     // break is used when the loop is ended and then it resumes the next statement following the
@@ -134,8 +160,9 @@ public class Main {
     // url: https://www.udemy.com/java-tutorial/learn/v4/t/lecture/135315
 
     Scanner input = new Scanner(System.in);
-    System.out.println("please enter a command:  ");
+    System.out.println("please enter a command: Type Start or Stop ");
     String text = input.nextLine();
+
 
     switch (text) {
       case "start":
@@ -149,6 +176,8 @@ public class Main {
       default:
         System.out.println("Command not recognized");
     }
+    input.close();
+
     // Used continue in a loop
     // continue means that it'll skip to the next iteration of the loop.
     // idea/source came from url: https://www.tutorialspoint.com/java/java_continue_statement.htm
@@ -173,7 +202,6 @@ public class Main {
     // used ++ sign
     // Used While loops
     // Used for loops
-    int num = 0;
     int numberOfTimesRandomNumberPickedAndPrinted = 0;
 
     Random randomGen = new Random();
@@ -191,7 +219,7 @@ public class Main {
     int number;
     for (int counter = 1; counter <= 6; counter++) {
       number = 1 + randomGen.nextInt(6);
-      System.out.println(1 + randomGen.nextInt(6));
+      System.out.println(number);
 
     }
 
@@ -209,7 +237,9 @@ public class Main {
     // Credit to thenewboston.
     // url: https://www.youtube.com/watch?v=8ZaTSedtf9M&feature=youtu.be
 
-    int women, men, people1;
+    int women;
+    int men;
+    int people1;
     women = 11;
     men = 3;
     people1 = women % men;
@@ -248,9 +278,10 @@ public class Main {
     final double valuePi = Math.PI;
     // When a variable is declared with final keyword, its value can’t be modified, so for Pi it's
     // always 3.14
+    System.out.println(valuePi);
 
-    Object anObject = "I'm going to type this casting";
-    String aString = (String) anObject;
+    String anObject = "I'm going to type this casting";
+    System.out.println(anObject);
     // Casting is taking an Object of one particular type and “turning it into” another Object type.
 
     System.out.println("My roommate said  \"Get more papertowels!\" " + "to " + firstName);
@@ -272,7 +303,7 @@ public class Main {
     }
 
     // Get a sum of values in an array using accumulator
-    int someArray[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int[] someArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int sum = 0;
 
     int[] ta = new int[101];
@@ -301,7 +332,8 @@ public class Main {
     List<Integer> array = Arrays.asList(1, 3, 5, 2, 4);
     if (array.contains(4)) {
       System.out.println("We found 4");
-    } ;
+    }
+
 
     // use multi-dimensional arrays
 
@@ -315,6 +347,7 @@ public class Main {
     // Search an array and identify index
     // It will print out 17 at number 7
     // prints out 7 in grid 0
+
 
     // Search a two-dim array
     // create and use the enhanced for loop
@@ -345,8 +378,9 @@ public class Main {
     } catch (Exception ex) {
       System.out.println("You can't do that");
     }
+
+    // Testing out if the bug works
     System.out.println("bug".substring(0));
   }
 
 }
-
