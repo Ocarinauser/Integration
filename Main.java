@@ -7,6 +7,8 @@ import java.util.Scanner;
 // Ben Zeitler
 // Theme is me learning how to implement code correctly
 // This project is to demonstrate how to execute code correctly.
+// This is my main file where I put in most of the skills I learning from programming.
+// The other files like car, person and male are all used to demonstrate constructors, getters and setters, and polymorphism.
 
 // Java Built-in datatypes
 // Byte: is an 8-bit signed two's complement integer. Minimum value of -128 to a maximum value of
