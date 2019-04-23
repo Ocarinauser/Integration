@@ -381,7 +381,7 @@ public class Main {
       System.out.println("You can't do that");
     }
 
-    // Testing out if the bug works
+   // Testing out if the bug works to make sure that we have no other bugs presents
     System.out.println("bug".substring(0));
   }
 
